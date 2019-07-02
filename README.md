@@ -1,5 +1,6 @@
 # Interactive web
-## Front-end Development
+
+## To see, download the project and click index.html
 
 ### THIRDPARTY:
 
