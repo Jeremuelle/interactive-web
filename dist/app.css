@@ -1,0 +1,1429 @@
+/**
+ * MAIN STYLES 
+ *
+ * @site       Somple interactive
+ * @author    Jem Lopez 
+ * @email      jeremuelle1@gmail.com
+ * @version   0.0.1
+ *
+ */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+.background-colors {
+  background: -webkit-linear-gradient(-278deg, var(--color-3) 30%, var(--color-2) 60%, var(--color-1) 80%);
+  background: -o-linear-gradient(-278deg, var(--color-3) 30%, var(--color-2) 60%, var(--color-1) 80%);
+  background: linear-gradient(-8deg, var(--color-3) 30%, var(--color-2) 60%, var(--color-1) 80%);
+  background-blend-mode: normal;
+  z-index: 0;
+  padding-bottom: 5%; }
+
+.financial-year {
+  background-color: #6b1e76; }
+  .financial-year .year:nth-child(1) aside .circle {
+    background-color: #f9badb;
+    color: var(--color-1); }
+  .financial-year .year:nth-child(1) .contents ul > li .bubble figure.small .circle-object {
+    box-shadow: -10px 20px 0px #9e1e8a;
+    -moz-box-shadow: -10px 20px 0px #9e1e8a;
+    -webkit-box-shadow: -10px 20px 0px #9e1e8a;
+    -o-box-shadow: -10px 20px 0px #9e1e8a; }
+  .financial-year .year:nth-child(1) .contents ul > li .bubble figure.large .circle-object {
+    box-shadow: 21px 10px 0px #9e1e8a;
+    -moz-box-shadow: 21px 10px 0px #9e1e8a;
+    -webkit-box-shadow: 21px 10px 0px #9e1e8a;
+    -o-box-shadow: 21px 10px 0px #9e1e8a; }
+  .financial-year .year:nth-child(1) .contents ul > li .bubble figure.normal .circle-object {
+    background-color: #9e1e8a; }
+  .financial-year .year:nth-child(1) .contents ul > li .bubble figure .circle-object {
+    background-color: #dc46c4; }
+  .financial-year .year:nth-child(1) .contents ul > li .bubble .content-reveal section p, .financial-year .year:nth-child(1) .contents ul > li .bubble .content-reveal section a {
+    color: var(--color-1); }
+  .financial-year .year:nth-child(1) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out; }
+    .financial-year .year:nth-child(1) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.normal .circle-object {
+      background-color: #ef1e6a; }
+    .financial-year .year:nth-child(1) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.small .circle-object {
+      box-shadow: -10px 20px 0px #ef1e6a;
+      -moz-box-shadow: -10px 20px 0px #ef1e6a;
+      -webkit-box-shadow: -10px 20px 0px #ef1e6a;
+      -o-box-shadow: -10px 20px 0px #ef1e6a; }
+    .financial-year .year:nth-child(1) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.large .circle-object {
+      box-shadow: 21px 10px 0px #ef1e6a;
+      -moz-box-shadow: 21px 10px 0px #ef1e6a;
+      -webkit-box-shadow: 21px 10px 0px #ef1e6a;
+      -o-box-shadow: 21px 10px 0px #ef1e6a; }
+  .financial-year .year:nth-child(2) aside .circle {
+    background-color: #febfdf;
+    color: var(--color-2); }
+  .financial-year .year:nth-child(2) .contents ul > li .bubble figure.small .circle-object {
+    box-shadow: -10px 20px 0px #9c0b40;
+    -moz-box-shadow: -10px 20px 0px #9c0b40;
+    -webkit-box-shadow: -10px 20px 0px #9c0b40;
+    -o-box-shadow: -10px 20px 0px #9c0b40; }
+  .financial-year .year:nth-child(2) .contents ul > li .bubble figure.large .circle-object {
+    box-shadow: 21px 10px 0px #9c0b40;
+    -moz-box-shadow: 21px 10px 0px #9c0b40;
+    -webkit-box-shadow: 21px 10px 0px #9c0b40;
+    -o-box-shadow: 21px 10px 0px #9c0b40; }
+  .financial-year .year:nth-child(2) .contents ul > li .bubble figure.normal .circle-object {
+    background-color: #9c0b40; }
+  .financial-year .year:nth-child(2) .contents ul > li .bubble figure .circle-object {
+    background-color: #ef1e6a; }
+  .financial-year .year:nth-child(2) .contents ul > li .bubble .content-reveal section p, .financial-year .year:nth-child(2) .contents ul > li .bubble .content-reveal section a {
+    color: var(--color-2); }
+  .financial-year .year:nth-child(2) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out; }
+    .financial-year .year:nth-child(2) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.normal .circle-object {
+      background-color: #da4f41; }
+    .financial-year .year:nth-child(2) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.small .circle-object {
+      box-shadow: -10px 20px 0px #da4f41;
+      -moz-box-shadow: -10px 20px 0px #da4f41;
+      -webkit-box-shadow: -10px 20px 0px #da4f41;
+      -o-box-shadow: -10px 20px 0px #da4f41; }
+    .financial-year .year:nth-child(2) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.large .circle-object {
+      box-shadow: 21px 10px 0px #da4f41;
+      -moz-box-shadow: 21px 10px 0px #da4f41;
+      -webkit-box-shadow: 21px 10px 0px #da4f41;
+      -o-box-shadow: 21px 10px 0px #da4f41; }
+  .financial-year .year:nth-child(3) aside .circle {
+    background-color: #f9cdb4;
+    color: var(--color-3); }
+  .financial-year .year:nth-child(3) .contents ul > li .bubble figure.small .circle-object {
+    box-shadow: -10px 20px 0px #d63b2c;
+    -moz-box-shadow: -10px 20px 0px #d63b2c;
+    -webkit-box-shadow: -10px 20px 0px #d63b2c;
+    -o-box-shadow: -10px 20px 0px #d63b2c; }
+  .financial-year .year:nth-child(3) .contents ul > li .bubble figure.large .circle-object {
+    box-shadow: 21px 10px 0px #d63b2c;
+    -moz-box-shadow: 21px 10px 0px #d63b2c;
+    -webkit-box-shadow: 21px 10px 0px #d63b2c;
+    -o-box-shadow: 21px 10px 0px #d63b2c; }
+  .financial-year .year:nth-child(3) .contents ul > li .bubble figure.normal .circle-object {
+    background-color: #d63b2c; }
+  .financial-year .year:nth-child(3) .contents ul > li .bubble figure .circle-object {
+    background-color: #e78a81; }
+  .financial-year .year:nth-child(3) .contents ul > li .bubble .content-reveal section p, .financial-year .year:nth-child(3) .contents ul > li .bubble .content-reveal section a {
+    color: var(--color-3); }
+  .financial-year .year:nth-child(3) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out; }
+    .financial-year .year:nth-child(3) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.normal .circle-object {
+      background-color: #d63b2c; }
+    .financial-year .year:nth-child(3) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.small .circle-object {
+      box-shadow: -10px 20px 0px #d63b2c;
+      -moz-box-shadow: -10px 20px 0px #d63b2c;
+      -webkit-box-shadow: -10px 20px 0px #d63b2c;
+      -o-box-shadow: -10px 20px 0px #d63b2c; }
+    .financial-year .year:nth-child(3) .months .month:last-child .contents ul > li:nth-last-child(-n+3) .bubble figure.large .circle-object {
+      box-shadow: 21px 10px 0px #d63b2c;
+      -moz-box-shadow: 21px 10px 0px #d63b2c;
+      -webkit-box-shadow: 21px 10px 0px #d63b2c;
+      -o-box-shadow: 21px 10px 0px #d63b2c; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+body {
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'akkuratregular';
+  color: inherit; }
+
+span, p, b, i {
+  font-family: 'akkurat_lightregular';
+  color: inherit; }
+
+a {
+  color: #FFFFFF;
+  font-family: 'akkuratbold';
+  cursor: pointer !important; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul > li {
+    list-style: none;
+    padding: 10px 0; }
+    ul > li a {
+      text-decoration: none;
+      font-family: 'akkurat_lightregular';
+      font-size: 15px; }
+
+.hide {
+  display: none !important; }
+
+.grid {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media (max-width: 768px) {
+    .flex {
+      flex-wrap: wrap; } }
+
+@font-face {
+  font-family: 'akkuratbold_italic';
+  src: url("../assets/webfonts/akkurat-bold-italic-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-bold-italic-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'akkuratbold';
+  src: url("../assets/webfonts/akkurat-bold-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-bold-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'akkuratitalic';
+  src: url("../assets/webfonts/akkurat-italic-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-italic-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'akkurat_lightitalic';
+  src: url("../assets/webfonts/akkurat-light-italic-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-light-italic-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'akkurat_lightregular';
+  src: url("../assets/webfonts/akkurat-light-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-light-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'akkuratregular';
+  src: url("../assets/webfonts/akkurat-opentype-webfont.woff2") format("woff2"), url("../assets/webfonts/akkurat-opentype-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  animation-iteration-count: infinite; }
+
+.animated.hinge {
+  animation-duration: 2s; }
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s; }
+
+@keyframes grow {
+  from {
+    height: 0%; }
+  to {
+    height: 99%; } }
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    transform: translate3d(0, -4px, 0); } }
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom; }
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1; }
+  25%, 75% {
+    opacity: 0; } }
+
+.flash {
+  animation-name: flash; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@keyframes bobble {
+  0% {
+    transform: translate3d(0px, 10px, 10px);
+    animation-timing-function: ease-in; }
+  50% {
+    transform: translate3d(0px, 5px, 0px);
+    animation-timing-function: ease-out; }
+  100% {
+    transform: translate3d(0px, 10px, 10px); } }
+
+@keyframes grow {
+  from {
+    height: 0%; }
+  to {
+    height: 90%; } }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+.pulse {
+  animation-name: pulse; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@keyframes wobble {
+  from {
+    transform: none; }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+  to {
+    transform: none; } }
+
+.wobble {
+  animation-name: wobble; }
+
+@keyframes jello {
+  from, 11.1%, to {
+    transform: none; }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg); }
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg); } }
+
+.jello {
+  animation-name: jello;
+  transform-origin: center; }
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97); }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+
+.bounceIn {
+  animation-name: bounceIn; }
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0); }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0); }
+  75% {
+    transform: translate3d(-10px, 0, 0); }
+  90% {
+    transform: translate3d(5px, 0, 0); }
+  to {
+    transform: none; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDown {
+  animation-name: fadeInDown; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-8%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUp {
+  animation-name: fadeInUp; }
+
+.bubble-active {
+  -webkit-box-shadow: 0px -1px 97px 6px white !important;
+  -moz-box-shadow: 0px -1px 97px 6px white !important;
+  box-shadow: 0px -1px 97px 6px white !important; }
+
+.not-active .bubble > figure:not(.bubble-active) {
+  opacity: 0.5; }
+
+.is-active {
+  padding-left: 10%;
+  font-size: 1.125rem;
+  font-family: 'akkuratbold'; }
+  .is-active .close {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    border: none;
+    background: url("../assets/imgs/icons/close.svg") left top no-repeat;
+    background-size: 20px;
+    padding: 10px; }
+
+.top-banner h1 {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1; }
+
+.explore div section:first-child {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
+
+.explore div section:last-child {
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+
+#pulse-mouse {
+  animation-name: bounce;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite; }
+  #pulse-mouse:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite; }
+
+.constituents aside.sticker {
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out; }
+  .constituents aside.sticker ul > li {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    line-height: 20px; }
+    .constituents aside.sticker ul > li:not(:last-child):hover a {
+      -webkit-transition: all 0.20s ease-in-out;
+      -moz-transition: all 0.20s ease-in-out;
+      -ms-transition: all 0.20s ease-in-out;
+      -o-transition: all 0.20s ease-in-out;
+      padding-left: 10%;
+      font-size: 1.125rem; }
+    .constituents aside.sticker ul > li:last-child:hover a {
+      color: #e6e5e5; }
+
+.bubble > figure .circle-object:not(:hover) {
+  animation-name: bobble;
+  animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite; }
+
+.bubble > figure:hover .circle-object {
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  z-index: 1;
+  width: 12.5rem !important;
+  height: 12.5rem !important;
+  margin: 5% 0;
+  box-shadow: none !important;
+  background-blend-mode: normal !important; }
+
+.bubble > figure:hover a.link {
+  display: none; }
+
+.bubble > figure:hover .content-reveal {
+  display: block !important;
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out;
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1; }
+
+.month aside > .circle {
+  -webkit-transition: all 0.20s ease-in-out;
+  -moz-transition: all 0.20s ease-in-out;
+  -ms-transition: all 0.20s ease-in-out;
+  -o-transition: all 0.20s ease-in-out; }
+  .month aside > .circle:hover {
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite; }
+
+[data-aos^=bounce].aos-animate {
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1; }
+
+[data-aos^=grow].aos-animate {
+  animation-name: grow;
+  animation-duration: 3.5s;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1; }
+
+[data-aos^=bounceInLeft].aos-animate {
+  animation-name: bounceInLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1; }
+
+.banner-container {
+  z-index: 1;
+  position: relative; }
+
+.top-banner {
+  background-size: cover !important;
+  height: 32.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .top-banner div {
+    text-align: center; }
+    .top-banner div h1, .top-banner div span {
+      font-family: 'akkuratbold';
+      color: #FFFFFF;
+      font-size: 9vw; }
+
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(248, 80, 50, 0);
+  background: -moz-linear-gradient(top, rgba(107, 30, 118, 0) 0%, rgba(107, 30, 118, 0.73) 30%, #6b1e76 41%, #6b1e76 73%, rgba(107, 30, 118, 0.81) 78%, rgba(107, 30, 118, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(107, 30, 118, 0)), color-stop(30%, rgba(107, 30, 118, 0.73)), color-stop(41%, #6b1e76), color-stop(73%, #6b1e76), color-stop(78%, rgba(107, 30, 118, 0.81)), color-stop(100%, rgba(107, 30, 118, 0)));
+  background: -webkit-linear-gradient(top, rgba(107, 30, 118, 0) 0%, rgba(107, 30, 118, 0.73) 30%, #6b1e76 41%, #6b1e76 73%, rgba(107, 30, 118, 0.81) 78%, rgba(107, 30, 118, 0) 100%);
+  background: -o-linear-gradient(top, rgba(107, 30, 118, 0) 0%, rgba(107, 30, 118, 0.73) 30%, #6b1e76 41%, #6b1e76 73%, rgba(107, 30, 118, 0.81) 78%, rgba(107, 30, 118, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(107, 30, 118, 0) 0%, rgba(107, 30, 118, 0.73) 30%, #6b1e76 41%, #6b1e76 73%, rgba(107, 30, 118, 0.81) 78%, rgba(107, 30, 118, 0) 100%);
+  background: linear-gradient(to bottom, rgba(107, 30, 118, 0) 0%, rgba(107, 30, 118, 0.73) 30%, #6b1e76 41%, #6b1e76 73%, rgba(107, 30, 118, 0.81) 78%, rgba(107, 30, 118, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$main-bg', endColorstr='$main-bg', GradientType=0 );
+  height: 31.25rem;
+  width: 100%;
+  position: relative;
+  top: -210px;
+  z-index: 1; }
+  .explore > div {
+    padding: 5%; }
+    @media (min-width: 1200px) {
+      .explore > div {
+        max-width: 75%; } }
+    .explore > div p {
+      font-family: 'akkurat_lightregular';
+      color: #FFFFFF;
+      font-size: 1.125rem; }
+    .explore > div section:first-child {
+      padding: 0 15%; }
+      .explore > div section:first-child a {
+        font-weight: 700;
+        color: #FFFFFF; }
+      .explore > div section:first-child p {
+        line-height: 25px; }
+    .explore > div section:last-child {
+      padding-top: 5%;
+      text-align: center;
+      color: #FFFFFF; }
+      .explore > div section:last-child a {
+        display: block;
+        padding-top: 1.875rem; }
+      .explore > div section:last-child span {
+        font-size: 1.25rem; }
+
+.inside-container #sidebar-nav {
+  position: absolute;
+  z-index: 11;
+  top: 40%; }
+  .inside-container #sidebar-nav aside ul > li {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px 10px; }
+    .inside-container #sidebar-nav aside ul > li a:hover {
+      font-family: 'akkuratbold'; }
+    .inside-container #sidebar-nav aside ul > li a.is-active, .inside-container #sidebar-nav aside ul > li a.scroll-is-active {
+      font-family: 'akkuratbold'; }
+
+.financial-year .year-container {
+  margin-top: -100px; }
+
+.financial-year .year:first-child > .constituents:before {
+  height: 126.76%;
+  top: -500px; }
+
+.financial-year .year .bg-year {
+  position: absolute;
+  display: block;
+  z-index: 0;
+  left: -40px;
+  mix-blend-mode: soft-light; }
+  .financial-year .year .bg-year span {
+    font-family: 'akkuratbold';
+    font-size: 31.25rem;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0; }
+    .financial-year .year .bg-year span:first-child {
+      opacity: 0.2; }
+    .financial-year .year .bg-year span:last-child {
+      opacity: 0.3; }
+
+.financial-year .year .constituents {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 1;
+  padding-top: 5%; }
+  .financial-year .year .constituents:before {
+    content: '';
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    height: 100%; }
+  @media (max-width: 768px) {
+    .financial-year .year .constituents {
+      flex-wrap: wrap; } }
+  .financial-year .year .constituents .sticker {
+    flex: 1 1 31.6666666667%;
+    position: relative;
+    top: 0; }
+    .financial-year .year .constituents .sticker h1 {
+      font-family: 'akkuratregular';
+      font-size: 2.5rem;
+      color: #FFFFFF;
+      max-width: 90%;
+      white-space: wrap;
+      margin: 20px 0; }
+    .financial-year .year .constituents .sticker ul > li {
+      line-height: 20px; }
+      .financial-year .year .constituents .sticker ul > li:last-child {
+        margin-top: 20%; }
+        .financial-year .year .constituents .sticker ul > li:last-child:after {
+          content: ' ';
+          border-top: 1px solid #FFFFFF;
+          display: block;
+          width: 30%;
+          position: relative;
+          top: -60px; }
+      .financial-year .year .constituents .sticker ul > li a {
+        font-size: 0.875rem;
+        -webkit-transition: all 0.20s ease-in-out;
+        -moz-transition: all 0.20s ease-in-out;
+        -ms-transition: all 0.20s ease-in-out;
+        -o-transition: all 0.20s ease-in-out;
+        font-family: 'akkurat_lightregular'; }
+  .financial-year .year .constituents .months {
+    flex: 1 1 65%;
+    float: right; }
+    .financial-year .year .constituents .months .teaser {
+      width: 81.6666666667%;
+      margin-left: 11.3333333333%;
+      margin-bottom: 6.25rem; }
+      .financial-year .year .constituents .months .teaser h3 {
+        font-family: 'akkuratregular';
+        line-height: 1.5;
+        font-weight: 100;
+        color: #FFFFFF; }
+    .financial-year .year .constituents .months .month {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative; }
+      @media (max-width: 768px) {
+        .financial-year .year .constituents .months .month {
+          flex-wrap: wrap; } }
+      .financial-year .year .constituents .months .month .vr {
+        width: 0;
+        height: 90%;
+        position: absolute;
+        border-left: 1px solid #cccccc;
+        top: 150px;
+        left: 9%;
+        z-index: 0; }
+      .financial-year .year .constituents .months .month aside {
+        flex: 1 1 23.3333333333%;
+        margin: 0 auto;
+        z-index: 3; }
+        .financial-year .year .constituents .months .month aside .circle {
+          width: 8.75rem;
+          height: 8.75rem;
+          border-radius: 50%;
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle; }
+          .financial-year .year .constituents .months .month aside .circle i {
+            font-size: 0.8125rem; }
+          .financial-year .year .constituents .months .month aside .circle i, .financial-year .year .constituents .months .month aside .circle b {
+            display: block;
+            text-transform: uppercase;
+            font-style: normal; }
+          .financial-year .year .constituents .months .month aside .circle b {
+            font-size: 1.875rem;
+            text-transform: uppercase;
+            font-family: 'akkuratbold'; }
+      .financial-year .year .constituents .months .month .contents {
+        flex: 1 1 73.3333333333%; }
+        .financial-year .year .constituents .months .month .contents ul > li {
+          margin: 5% 0;
+          position: relative; }
+          .financial-year .year .constituents .months .month .contents ul > li .bubble {
+            width: 50%;
+            position: relative; }
+            .financial-year .year .constituents .months .month .contents ul > li .bubble figure {
+              position: relative;
+              z-index: 0; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.small .circle-object {
+                width: 6.25rem;
+                height: 6.25rem;
+                background-size: cover !important; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.small .link-wrapper {
+                width: 60%; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble figure.small .link-wrapper a.link {
+                  font-size: 1rem; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.large .circle-object {
+                width: 9.375rem;
+                height: 9.375rem;
+                background-size: cover !important; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.large .link-wrapper {
+                width: 100%;
+                left: 20%;
+                top: 50px; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble figure.large .link-wrapper a.link {
+                  font-size: 1.125rem; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.normal .circle-object {
+                box-shadow: none;
+                width: 5.625rem;
+                height: 5.625rem;
+                background-size: cover !important; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure.normal .link-wrapper a.link {
+                font-size: 0.875rem; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure .circle-object {
+                -webkit-transition: all 0.20s ease-in-out;
+                -moz-transition: all 0.20s ease-in-out;
+                -ms-transition: all 0.20s ease-in-out;
+                -o-transition: all 0.20s ease-in-out;
+                background-size: 100% !important;
+                background-position: center !important;
+                border-radius: 50%;
+                background-blend-mode: overlay;
+                position: relative;
+                z-index: 3; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble figure .link-wrapper {
+                position: absolute;
+                z-index: 5;
+                display: inline-block;
+                top: 30px;
+                left: 20%;
+                width: 50%; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble figure .link-wrapper a.link {
+                  z-index: 5;
+                  font-size: 1.125rem;
+                  width: 140px; }
+                  .financial-year .year .constituents .months .month .contents ul > li .bubble figure .link-wrapper a.link span {
+                    border-bottom: 1px solid #FFFFFF;
+                    width: 50%;
+                    margin: 10px 15%;
+                    text-align: center;
+                    display: inline-block; }
+            .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal {
+              display: none;
+              position: absolute;
+              bottom: -50%;
+              left: 40%;
+              width: 28.125rem;
+              height: 28.125rem;
+              background-color: #FFFFFF;
+              border-radius: 50%;
+              z-index: 2; }
+              .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section {
+                padding: 0.625rem 0;
+                position: relative;
+                top: 30%;
+                left: 30%;
+                max-width: 50%; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section a, .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section h2, .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section p {
+                  display: block;
+                  margin: 0 auto; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section p {
+                  font-size: 1.5625rem;
+                  font-family: 'akkuratregular';
+                  line-height: 1;
+                  padding-top: 0.625rem;
+                  white-space: wrap; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section h2 {
+                  font-family: 'akkuratregular';
+                  font-size: 1rem;
+                  text-transform: uppercase;
+                  color: black; }
+                .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section a {
+                  font-family: 'akkuratbold';
+                  font-size: 1.25rem;
+                  padding: 1.25rem 0;
+                  position: relative; }
+                  .financial-year .year .constituents .months .month .contents ul > li .bubble .content-reveal section a:after {
+                    content: ' ';
+                    width: 30%;
+                    border-top: 1px solid currentColor;
+                    position: absolute;
+                    top: 30px;
+                    margin: 0 10px; }
+
+@media (max-width: 768px) {
+  .top-banner div h1, .top-banner div span {
+    display: block;
+    font-size: 3.4375rem; }
+  .inside-container .financial-year .year-container .year .bg-year {
+    left: 0px; }
+    .inside-container .financial-year .year-container .year .bg-year span {
+      font-size: 18.75rem;
+      display: block; }
+  .inside-container .financial-year .year-container .year .constituents aside {
+    flex: 1 1 98.3333333333%; }
+  .inside-container .financial-year .year-container .year .constituents .months .month {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; } }
+  @media (max-width: 768px) and (max-width: 768px) {
+    .inside-container .financial-year .year-container .year .constituents .months .month {
+      flex-wrap: wrap; } }
+
+@media (max-width: 768px) {
+    .inside-container .financial-year .year-container .year .constituents .months .month .vr {
+      left: 13%;
+      top: 100px; }
+    .inside-container .financial-year .year-container .year .constituents .months .month aside {
+      flex: 1 1 31.6666666667%; }
+      .inside-container .financial-year .year-container .year .constituents .months .month aside .circle {
+        width: 3.125rem;
+        height: 3.125rem;
+        padding: 20px; }
+        .inside-container .financial-year .year-container .year .constituents .months .month aside .circle b {
+          font-size: 1.25rem; }
+        .inside-container .financial-year .year-container .year .constituents .months .month aside .circle i {
+          font-size: 0.8125rem;
+          padding: 0 3px; }
+  .inside-container .financial-year .year-container .year .constituents .months .contents {
+    flex: 1 1 73.3333333333%;
+    margin-left: 10%; }
+    .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble {
+      width: 80%; }
+      .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .link-wrapper {
+        width: 80%; }
+      .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .content-reveal {
+        top: -10%;
+        right: 50%;
+        z-index: 10;
+        width: 15.625rem !important;
+        height: 15.625rem !important; }
+        .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .content-reveal section {
+          top: 15%; }
+          .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .content-reveal section h2 {
+            font-size: 0.8125rem; }
+          .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .content-reveal section p {
+            font-size: 1.125rem; }
+          .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble figure .content-reveal section a {
+            font-size: 1.125rem; }
+      .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble .bubble > figure:hover .circle-object {
+        position: relative;
+        z-index: 99; }
+      .inside-container .financial-year .year-container .year .constituents .months .contents ul.bubbles > li .bubble .bubble > figure:hover .content-reveal {
+        position: relative; } }
+
+@media screen and (max-width: 1388px) {
+  .inside-container {
+    position: static; }
+    .inside-container:before {
+      height: 0%; }
+  #sidebar-nav {
+    display: block;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%; }
+    #sidebar-nav aside {
+      float: right; }
+      #sidebar-nav aside ul:before {
+        content: 'YEAR';
+        margin-right: 20px;
+        font-family: 'akkuratbold';
+        color: #FFFFFF; }
+      #sidebar-nav aside ul li {
+        display: inline-block;
+        margin-right: 20px; }
+  .year > .constituents {
+    border-right: none; } }
+
+@media screen and (min-width: 1388px) {
+  #sidebar-nav {
+    right: 0; } }
+
+@media screen and (min-width: 1550px) and (max-width: 1590px) {
+  #sidebar-nav {
+    right: 8%; } }
+
+@media screen and (min-width: 1590px) and (max-width: 1620px) {
+  #sidebar-nav {
+    right: 8.6%; } }
+
+@media screen and (min-width: 1620px) and (max-width: 1650px) {
+  #sidebar-nav {
+    right: 9.5%; } }
+
+@media screen and (min-width: 1650px) and (max-width: 1690px) {
+  #sidebar-nav {
+    right: 10%; } }
+
+@media screen and (min-width: 1690px) and (max-width: 1750px) {
+  #sidebar-nav {
+    right: 11%; } }
+
+@media screen and (min-width: 1750px) and (max-width: 1780px) {
+  #sidebar-nav {
+    right: 12.4%; } }
+
+@media screen and (min-width: 1780px) and (max-width: 1800px) {
+  #sidebar-nav {
+    right: 13%; } }
+
+@media screen and (min-width: 1800px) and (max-width: 1866px) {
+  #sidebar-nav {
+    right: 13.3%; } }
+
+@media screen and (min-width: 1866px) and (max-width: 1900px) {
+  #sidebar-nav {
+    right: 14.7%; } }
+
+@media screen and (min-width: 1900px) and (max-width: 1920px) {
+  #sidebar-nav {
+    right: 15.5%; } }

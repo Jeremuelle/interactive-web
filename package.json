@@ -1,0 +1,16 @@
+{
+  "name": "trendsetter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.7.1",
+    "susy": "^3.0.1"
+  }
+}

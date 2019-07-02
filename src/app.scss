@@ -1,0 +1,25 @@
+/**
+ * MAIN STYLES 
+ *
+ * @site       Somple interactive
+ * @author    Jem Lopez 
+ * @email      jeremuelle1@gmail.com
+ * @version   0.0.1
+ *
+ */
+@import "susy";
+@import "sass/components/normalize";
+@import "sass/components/mixins";
+@import "sass/theme/themes";
+
+@import "sass/components/settings";
+@import "sass/components/helpers";
+@import "sass/components/typography";
+
+@import "sass/animations/animate";
+@import "sass/animations/animations";
+
+
+@import "sass/main/top-banner";
+@import "sass/main/financial_year";
+@import "sass/main/responsive";

@@ -1,0 +1,134 @@
+// 
+// THEMES & COLORS
+
+// MAIN COLORS
+
+$white      : #FFFFFF;
+$main-bg         : #6b1e76;
+
+// THEME1
+$t1: var(--color-1);
+$t1-font:#560965 ;
+$t1-light: #f9badb ;
+$t1-dark: #9e1e8a ;
+
+// THEME 2
+$t2: var(--color-2);
+$t2-font:#a61d50 ;
+$t2-light: #febfdf ;
+$t2-dark: #9c0b40 ;
+
+// THEME 3
+$t3:  var(--color-3);
+$t3-font:#d63b2c ;
+$t3-light: #f9cdb4 ;
+$t3-dark: #d63b2c ;
+
+// SASS VARIABLES
+$theme-var: $t1, $t2, $t3;
+$theme-fonts:  $t1-font, $t2-font, $t3-font;
+$theme-light: $t1-light, $t2-light, $t3-light;
+$theme-dark: $t1-dark, $t2-dark, $t3-dark;
+$theme-last-circle: lighten($t2-dark, 20%), lighten($t3-dark, 5%),  $t3-dark;
+
+// BACKGROUND GRADIENT
+.background-colors {
+    background: -webkit-linear-gradient(-278deg, 
+        var(--color-3) 30%, 
+        var(--color-2) 60%, 
+        var(--color-1) 80%
+    );
+    background: -o-linear-gradient(-278deg,
+        var(--color-3) 30%,
+        var(--color-2) 60%, 
+        var(--color-1) 80%
+    );
+    background: linear-gradient(-8deg, 
+        var(--color-3) 30%, 
+        var(--color-2) 60%, 
+        var(--color-1) 80%
+    );
+    background-blend-mode: normal;
+    z-index: 0;
+    padding-bottom: 5%;
+}
+
+.financial-year {
+    background-color: $main-bg;
+    @for $i from 1 through 3 {
+        .year:nth-child(#{$i}) {
+            aside {
+                .circle {
+                    background-color: nth($theme-light, $i);
+                    color: nth($theme-var, $i);
+                }
+            }
+            .contents {
+                 ul {
+                    > li  {
+                        .bubble {
+                            figure {
+                                &.small {
+                                    .circle-object {
+                                        @include box-shadow(-10px 20px 0px nth($theme-dark, $i));
+                                    }
+                                }
+                                &.large {
+                                    .circle-object {
+                                        @include box-shadow(21px 10px 0px nth($theme-dark, $i));
+                                    }
+                                }
+                                &.normal {
+                                   .circle-object {
+                                        background-color: nth($theme-dark, $i);
+                                    }
+                                }
+                                .circle-object {
+                                    background-color: lighten(nth($theme-dark, $i), 20%); // fallback
+                                }
+                            }
+                            .content-reveal {
+                                section {
+                                    p, a {
+                                        color: nth($theme-var, $i);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .months {
+                .month:last-child {
+                    .contents {
+                        ul > li:nth-last-child(-n+3) {
+                            $x: $i + 1;
+                            .bubble {
+                                figure {
+                                    @include transition;
+                                    &.normal {
+                                        .circle-object {
+                                         background-color: nth($theme-last-circle, $i);
+                                        }
+                                    }
+                                    &.small {
+                                        .circle-object {
+                                            @include box-shadow(-10px 20px 0px nth($theme-last-circle, $i));
+                                        }
+                                    }
+                                    &.large {
+                                        .circle-object {
+                                            @include box-shadow(21px 10px 0px nth($theme-last-circle, $i));
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,20 @@
+//
+// Helpers
+// 
+// Basic helpers for easy stylings
+//
+
+.hide {
+    display: none !important;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex {
+    @include flex;
+}

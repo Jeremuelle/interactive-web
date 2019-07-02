@@ -1,0 +1,133 @@
+//
+// MIXINS
+//  
+//
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include bp(mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin font-bold {
+    font-family: 'akkuratbold';
+}
+
+@mixin font-bold-italic {
+    font-family: 'akkuratbold_italic';
+}
+
+@mixin font-regular {
+    font-family: 'akkuratregular';
+}
+
+@mixin font-light {
+    font-family: 'akkurat_lightregular';
+}
+
+@mixin greyscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+@mixin box-shadow($param) {
+    box-shadow: $param;
+    -moz-box-shadow: $param;
+    -webkit-box-shadow: $param;
+    -o-box-shadow: $param;
+}
+
+@mixin transition() {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+}
+
+@mixin transform( $values ) {
+    -webkit-transform: $values;
+    -moz-transform: $values;
+    -ms-transform: $values;
+    -o-transform: $values;
+    transform: $values;
+}
+
+@mixin animate($name, $duration, $count) {
+    animation-name: $name;
+    animation-duration: $duration;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $count; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: $count;
+}
+
+@mixin animate-delay($var) {
+    -webkit-animation-delay: $var;
+    animation-delay: $var; 
+}
+
+@mixin bg-trasparent-gradient() {
+    background: rgba(248,80,50,0);
+    background: -moz-linear-gradient(
+        top, rgba($main-bg,0) 0%,
+        rgba($main-bg,0.73) 30%, 
+        rgba($main-bg,1) 41%, 
+        rgba($main-bg,1) 73%, 
+        rgba($main-bg,0.81) 78%,
+        rgba($main-bg,0) 100%
+    );
+    background: -webkit-gradient(
+        left top, left bottom, 
+        color-stop(0%, rgba($main-bg,0)), 
+        color-stop(30%, rgba($main-bg,0.73)), 
+        color-stop(41%, rgba($main-bg,1)), 
+        color-stop(73%, rgba($main-bg,1)), 
+        color-stop(78%, rgba($main-bg,0.81)), 
+        color-stop(100%, rgba($main-bg,0))
+    );
+    background: -webkit-linear-gradient(
+        top, rgba($main-bg,0) 0%, 
+        rgba($main-bg,0.73) 30%, 
+        rgba($main-bg,1) 41%, 
+        rgba($main-bg,1) 73%, 
+        rgba($main-bg,0.81) 78%, 
+        rgba($main-bg,0) 100%
+    );
+    background: -o-linear-gradient(
+        top, rgba($main-bg,0) 0%, 
+        rgba($main-bg,0.73) 30%, 
+        rgba($main-bg,1) 41%, 
+        rgba($main-bg,1) 73%, 
+        rgba($main-bg,0.81) 78%, 
+        rgba($main-bg,0) 100%
+    );
+    background: -ms-linear-gradient(
+        top,
+         rgba($main-bg,0) 0%, 
+         rgba($main-bg,0.73) 30%, 
+         rgba($main-bg,1) 41%, 
+         rgba($main-bg,1) 73%, 
+         rgba($main-bg,0.81) 78%, 
+         rgba($main-bg,0) 100%
+    );
+    background: linear-gradient(to bottom, 
+        rgba($main-bg,0) 0%, 
+        rgba($main-bg,0.73) 30%, 
+        rgba($main-bg,1) 41%, 
+        rgba($main-bg,1) 73%, 
+        rgba($main-bg,0.81) 78%, 
+        rgba($main-bg,0) 100%
+        );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$main-bg', endColorstr='$main-bg', GradientType=0 );
+    }

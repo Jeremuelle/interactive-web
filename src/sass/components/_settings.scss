@@ -1,0 +1,108 @@
+//
+// SETTINGS
+// Includes media quiries, body, setting fonts etc
+// This is only set for this project, please do not copy.
+//
+
+$susy: (
+  'columns': susy-repeat(12),
+  'container-spread': 'wide',
+);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6, {
+    @include font-regular;
+    color: inherit;
+}
+
+ span, p, b, i {
+    @include font-light;
+    color: inherit;
+}
+
+a {
+    color: $white;
+    @include font-bold;
+    cursor: pointer !important;
+}
+
+ul  {
+    margin: 0;
+    padding: 0;
+    > li {
+        list-style: none;
+        padding: 10px 0;
+        a {
+            text-decoration: none;
+            @include font-light;
+            font-size: 15px;
+        }
+    }
+}
+// rem-calc
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+// Media Queries
+@mixin bp($ms)
+{
+  @if $ms == desktop
+  {
+    @media(min-width: 1200px)
+    {
+      @content;
+    }
+  }
+  @else if $ms == no-desktop
+  {
+    @media(max-width: 1199px)
+    {
+      @content;
+    }
+  }
+  @else if $ms == tablet
+  {
+    @media(max-width: 1199px) and (min-width: 769px)
+    {
+      @content;
+    }
+  }
+  @else if $ms == mobile
+  {
+    @media(max-width: 768px)
+    {
+      @content;
+    }
+  }
+  @else if $ms == no-mobile
+  {
+    @media(min-width: 769px)
+    {
+      @content;
+    }
+  }
+  @else
+  {
+    @warn 'No parameters.';
+  }
+}

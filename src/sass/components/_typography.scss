@@ -1,0 +1,52 @@
+
+// Typography
+
+@font-face {
+    font-family: 'akkuratbold_italic';
+    src: url('../assets/webfonts/akkurat-bold-italic-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-bold-italic-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akkuratbold';
+    src: url('../assets/webfonts/akkurat-bold-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-bold-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akkuratitalic';
+    src: url('../assets/webfonts/akkurat-italic-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-italic-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akkurat_lightitalic';
+    src: url('../assets/webfonts/akkurat-light-italic-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-light-italic-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akkurat_lightregular';
+    src: url('../assets/webfonts/akkurat-light-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-light-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akkuratregular';
+    src: url('../assets/webfonts/akkurat-opentype-webfont.woff2') format('woff2'),
+         url('../assets/webfonts/akkurat-opentype-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

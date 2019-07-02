@@ -1,0 +1,176 @@
+// on mobile
+
+@include bp(mobile) {
+    .top-banner {
+       div {
+           h1, span {
+                display: block;
+                font-size: rem-calc(55);
+            }
+        }
+    }
+    .inside-container {
+        .financial-year {
+            .year-container {
+                .year {
+                    .bg-year {
+                        left: 0px;
+                        span {
+                            font-size: rem-calc(300);
+                            display: block;
+                        }
+                    }
+                    .constituents {
+                        aside {
+                            flex: 1 1 span(12 of 12);
+                        }
+                        .months {
+
+                            .month {
+                                @include flex;
+                                .vr {
+                                    left: 13%;
+                                    top: 100px;       
+                                }
+                                aside {
+                                    flex: 1 1 span(4 of 12);
+                                    .circle {
+                                        width: rem-calc(50);
+                                        height: rem-calc(50);
+                                        padding: 20px; 
+                                        b {
+                                            font-size: rem-calc(20);
+                                        }
+                                        i {
+                                            font-size: rem-calc(13);
+                                            padding: 0 3px;
+                                        }
+                                    }
+                                }
+                            }
+                            .contents {
+                                flex: 1 1 span(9 of 12);
+                                margin-left: 10%;
+                                ul.bubbles {
+                                    >li {
+                                    .bubble {
+                                        width: 80%;
+                                        figure {
+                                            .link-wrapper {
+                                                width: 80%;
+                                            }
+                                            .content-reveal {
+                                                top: -10%;
+                                                right: 50%;
+                                                z-index: 10;
+                                                width: rem-calc(250) !important;
+                                                height: rem-calc(250) !important;
+                                                section {
+                                                    top: 15%;
+                                                    h2 {
+                                                        font-size: rem-calc(13);
+                                                    }
+                                                    p {
+                                                        font-size: rem-calc(18);   
+                                                    }
+                                                    a {
+                                                        font-size: rem-calc(18);   
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .bubble > figure {
+                                            &:hover {
+                                                .circle-object {
+                                                    position: relative;
+                                                    z-index: 99;
+                                                }
+                                                .content-reveal {
+                                                    position: relative;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ON Tablet/Smaller desktop
+@media screen and (max-width: 1388px) {
+    .inside-container {
+        position: static;
+         &:before  {
+            height: 0%;
+        }
+    }
+    #sidebar-nav {
+        display: block;
+        top: 0;
+        right: 0;
+        position: fixed;
+        background-color: rgba(black, 0.3);
+        width: 100%;
+        aside {
+            float: right;
+            ul {
+                &:before {
+                    content: 'YEAR';
+                    margin-right: 20px;
+                    @include font-bold;
+                    color: $white;
+
+                }
+                li {
+                    
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .year > .constituents { 
+        border-right: none;
+    }
+}
+// @TODO: Use flex instead!
+#sidebar-nav {
+    @media screen and (min-width: 1388px) {
+        right: 0;    
+    }
+    @media screen and (min-width: 1550px) and (max-width: 1590px){
+        right: 8%;    
+    }
+    @media screen and (min-width: 1590px) and (max-width: 1620px){
+        right: 8.6%;    
+    }
+    @media screen and (min-width: 1620px) and (max-width: 1650px){
+        right: 9.5%;    
+    }
+    @media screen and (min-width: 1650px) and (max-width: 1690px){
+        right: 10%;    
+    }
+    @media screen and (min-width: 1690px) and (max-width: 1750px){
+        right: 11%;    
+    }
+    @media screen and (min-width: 1750px) and (max-width: 1780px){
+        right: 12.4%;    
+    }
+    @media screen and (min-width: 1780px) and (max-width: 1800px){
+        right: 13%;    
+    }
+    @media screen and (min-width: 1800px) and (max-width: 1866px){
+        right: 13.3%;    
+    }
+    @media screen and (min-width: 1866px) and (max-width: 1900px){
+        right: 14.7%;    
+    }
+    @media screen and (min-width: 1900px) and (max-width: 1920px) {
+        right: 15.5%;
+    }
+}

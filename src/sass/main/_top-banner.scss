@@ -1,0 +1,69 @@
+// 
+//   TOP BANNER
+//  
+//  Main styles for banner 
+//
+
+.banner-container {
+    z-index: 1;
+    position: relative;
+}
+.top-banner {
+    background-size: cover !important;
+    height: rem-calc(525);
+    @include flex-center;
+    div {
+        text-align: center;
+        h1, span {
+            @include font-bold;
+            color: $white;
+            font-size: 9vw;
+        }
+    }
+}
+
+.explore {
+    @include flex-center;
+    @include bg-trasparent-gradient;
+    height: rem-calc(500);
+    width: 100%;
+    position: relative;
+    top: -210px;
+    z-index: 1;
+    > div {
+        
+        padding: 5%;
+        @include bp(desktop) {
+            max-width: 75%;    
+        }
+        p {
+            @include font-light;
+            color: $white;
+            font-size: rem-calc(18);
+        }
+        section {            
+            &:first-child {
+                padding: 0 15%;
+                a {
+                    font-weight: 700;
+                    color: $white
+                }
+                p {
+                    line-height: 25px;
+                }
+            }
+            &:last-child {
+                padding-top: 5%;
+                text-align: center;
+                color: $white;
+                a {
+                    display: block;
+                    padding-top: rem-calc(30);
+                }
+                span {
+                    font-size: rem-calc(20);
+                }
+            }
+        }
+    }
+}
